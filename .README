@@ -1,0 +1,49 @@
+# Campaign Management Service
+
+This project provides a service to create marketing campaigns using the SendGrid API. It includes a controller and service to handle campaign creation efficiently, including fetching the sender ID dynamically from SendGrid's sender list API.
+
+## Prerequisites
+
+- **Node.js**: Ensure you have Node.js installed (v14 or higher).
+- **npm or yarn**: Package manager to install dependencies.
+- **SendGrid API Key**: A valid SendGrid API key is required to authenticate with the SendGrid API.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+
+3. **Environment Variables**
+   Create a `.env` file in the root directory and add the following variables:
+   ```env
+   SENDGRID_API_KEY=<your-sendgrid-api-key>
+   ```
+
+4. **Run the Application**
+   ```bash
+   npm start
+   ```
+   or for development with live reload:
+   ```bash
+   npm run dev
+   ```
+
+## Project Structure
+
+- **controller/**: Contains the request handler for creating campaigns.
+- **service/**: Implements the logic for interacting with the SendGrid API.
+- **config/**: Stores configuration files, such as environment setup.
+- **routes/**: Defines API routes for campaign management.
+
